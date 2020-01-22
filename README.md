@@ -34,7 +34,7 @@ This module is exclusively used to make API calls and return data from the Datab
 
 
 
-|<img src="https://i.imgur.com/OLz0njk.jpg" width=500/>|<img src="https://i.imgur.com/OLz0njk.jpg" width=500/>|<img src="https://i.imgur.com/OLz0njk.jpg" width=500/>|<img src="https://i.imgur.com/OLz0njk.jpg" width=500/>|
+|<img src="https://i.imgur.com/OLz0njk.jpg" width=500/>|<img src="https://i.imgur.com/vIs7Ozq.jpg" width=500/>|<img src="https://i.imgur.com/81YtYMY.jpg" width=500/>|<img src="https://i.imgur.com/eG1dnNb.jpg" width=500/>|
 |:-------------------:|:-------------------:|:-------------------:|:-------------------:|
 |<img src="https://i.imgur.com/OLz0njk.jpg" width=500/>|<img src="https://i.imgur.com/OLz0njk.jpg" width=500/>|<img src="https://i.imgur.com/OLz0njk.jpg" width=500/>|<img src="https://i.imgur.com/OLz0njk.jpg" width=500/>|
 
