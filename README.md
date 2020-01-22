@@ -34,9 +34,9 @@ This module is exclusively used to make API calls and return data from the Datab
 
 
 
-|![img1](https://i.imgur.com/OLz0njk.jpg =300x500)|![img1](https://i.imgur.com/OLz0njk.jpg =300x500)|![img1](https://i.imgur.com/OLz0njk.jpg =300x500)|![img1](https://i.imgur.com/OLz0njk.jpg =300x500)|
-|:--------------:|:--------------:|:--------------:|:--------------:|
-|![img1](https://i.imgur.com/OLz0njk.jpg =300x500)|![img1](https://i.imgur.com/OLz0njk.jpg =300x500)|![img1](https://i.imgur.com/OLz0njk.jpg =300x500)|![img1](https://i.imgur.com/OLz0njk.jpg =300x500)|
+|<img src="https://i.imgur.com/OLz0njk.jpg" width=400/>|<img src="https://i.imgur.com/OLz0njk.jpg" width=400/>|<img src="https://i.imgur.com/OLz0njk.jpg" width=400/>|<img src="https://i.imgur.com/OLz0njk.jpg" width=400/>|
+|:-------------------:|:-------------------:|:-------------------:|:-------------------:|
+|<img src="https://i.imgur.com/OLz0njk.jpg" width=400/>|<img src="https://i.imgur.com/OLz0njk.jpg" width=400/>|<img src="https://i.imgur.com/OLz0njk.jpg" width=400/>|<img src="https://i.imgur.com/OLz0njk.jpg" width=400/>|
 
 
 
