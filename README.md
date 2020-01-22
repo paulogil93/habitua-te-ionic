@@ -20,7 +20,7 @@ In order to respond to the different kind of requests performed within the app, 
 	<img src="https://pluralsight2.imgix.net/paths/images/angular-14a0f6532f.png" width=128 height=128/>
 </p>
 
-Chose _Angular_ because it is a frontend framework which remains one of the best solutions for web development development. It served to extend the knowledge on frontend frameworks and languages.
+Chose _Angular_ because it is a frontend framework which remains one of the best solutions for web development. It served to extend the knowledge on frontend frameworks and languages.
 
 ## Auth Module
 
