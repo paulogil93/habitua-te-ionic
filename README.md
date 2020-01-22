@@ -12,7 +12,7 @@ This project is divided in:
 
 # Habitua-te Ionic
 
-In order to respond to the different kind of requests performed within the app, it was better to make a REST API. It was built using SQLAlchemy to deal with the Database and Flask to deal with the calls.
+Ionic is a complete open-source SDK for hybrid mobile app development. It's cross-platform which means we can build apps for native Android, iOS and Web from a singl codebase. Had the idea to develop this app for iOS and Android but soon abandoned the idea due to high price of Apple Developer Account :(
 
 ## Angular  
 
@@ -36,7 +36,7 @@ This module is exclusively used to make API calls and return data from the Datab
 
 |<img src="https://i.imgur.com/OLz0njk.jpg" width=500/>|<img src="https://i.imgur.com/vIs7Ozq.jpg" width=500/>|<img src="https://i.imgur.com/81YtYMY.jpg" width=500/>|<img src="https://i.imgur.com/eG1dnNb.jpg" width=500/>|
 |:-------------------:|:-------------------:|:-------------------:|:-------------------:|
-|<img src="https://i.imgur.com/OLz0njk.jpg" width=500/>|<img src="https://i.imgur.com/OLz0njk.jpg" width=500/>|<img src="https://i.imgur.com/OLz0njk.jpg" width=500/>|<img src="https://i.imgur.com/OLz0njk.jpg" width=500/>|
+|<img src="https://i.imgur.com/acdecsK.jpg" width=500/>|<img src="https://i.imgur.com/rf0wBnZ.jpg" width=500/>|<img src="https://i.imgur.com/ops0Eqe.jpg" width=500/>|<img src="https://i.imgur.com/0QR2L7K.jpg" width=500/>|
 
 
 
