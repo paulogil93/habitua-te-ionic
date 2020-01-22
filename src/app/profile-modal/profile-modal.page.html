@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="gold">{{ user?.name }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        <ion-icon color="light" slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card style="background-color: #505050">
+    <ion-card-header>
+      <ion-card-title color="gold">Detalhes</ion-card-title>
+    </ion-card-header>
+    <hr style="border-top: 1px dotted gold">
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col align-items-center>
+            <ion-avatar class="avatar">
+              <ion-img src="{{ user?.profile_pic }}"></ion-img>        
+            </ion-avatar>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <br>
+      <br>
+      <ion-item color="grey" class="item-content" text-center>
+        <ion-label color="gold">Nome: </ion-label>
+        <ion-label color="light">{{ user?.name }}</ion-label>
+      </ion-item>
+      <ion-item color="grey" text-center>
+        <ion-label color="gold">Membro desde: </ion-label>
+        <ion-label color="light">{{ user?.start_date }}</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card style="background-color: #505050">
+    <ion-card-header>
+      <ion-card-title color="gold">Bebida preferida</ion-card-title>
+    </ion-card-header>
+    <hr style="border-top: 1px dotted gold">
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col align-items-center text-center>
+            <ion-avatar class="avatar-small">
+              <ion-img src="{{ product?.product_pic }}"></ion-img>
+            </ion-avatar>
+            <ion-label color="gold">{{ product?.product_name }}</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

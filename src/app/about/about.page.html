@@ -1,0 +1,195 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="gold">Sobre</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card style="background: #505050">
+    <ion-card-header>
+      <ion-card-title color="gold">
+        Localização
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <hr style="border-top: 1px dotted gold">
+      <ion-text text-align-right color="light">
+        <br>
+        Rua 25 de Abril - Bar Habitua-te
+        <br>
+        Lote 1 - R/C Esq
+        <br>
+        Penalva do Castelo
+        <br>
+        3550-136 Penalva do Castelo
+        <br>
+      </ion-text>
+      <br>
+      <hr style="border-top: 1px dotted gold">
+      <br>
+      <ion-img src="https://i.imgur.com/uZwi2YL.png" (click)=openGMaps()></ion-img>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-chip style="background: #FFFFFF" color="primary" (click)=openGMaps()>
+              <ion-icon name="pin"></ion-icon>
+              <ion-label>Abrir navegador</ion-label>
+            </ion-chip>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card style="background: #505050">
+    <ion-card-header>
+      <ion-card-title color="gold">
+        Proprietário
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <hr style="border-top: 1px dotted gold">
+      <ion-text text-align-right color="light">
+        <br> 
+        Diogo Pereira
+        <br>
+        962 772 859
+        <br>
+      </ion-text>
+      <br>
+      <hr style="border-top: 1px dotted gold">
+      <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-chip style="background: #FFFFFF" color="primary" (click)=openDialer()>
+                <ion-icon name="call"></ion-icon>
+                <ion-label>Contactar proprietário</ion-label>
+              </ion-chip>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card style="background: #505050">
+    <ion-card-header>
+      <ion-card-title color="gold">
+        Horário
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <hr style="border-top: 1px dotted gold">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-text color="light">
+              <strong>Dias</strong>
+            </ion-text>
+          </ion-col>
+          <ion-col>
+            <ion-text color="light">
+              <strong>Tarde</strong>
+            </ion-text>
+          </ion-col>
+          <ion-col>
+            <ion-text color="light">
+              <strong>Noite</strong>
+            </ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-text color="light">
+              <strong>Segunda</strong>
+            </ion-text>
+          </ion-col>
+          <ion-col>
+            <ion-text color="light">
+              Fechado
+            </ion-text>
+          </ion-col>
+          <ion-col>
+            <ion-text color="light">
+              20:00-04:00
+            </ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-text color="light">
+              <strong>Terça a Sexta</strong>
+            </ion-text>
+          </ion-col>
+          <ion-col>
+            <ion-text color="light">
+              13:00-17:00
+            </ion-text>
+          </ion-col>
+          <ion-col>
+            <ion-text color="light">
+              20:00-04:00
+            </ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-text color="light" style="font-size: 12px">
+              <strong>Fim-de-semana</strong>
+            </ion-text>
+          </ion-col>
+          <ion-col>
+            <ion-text color="light">
+              13:30-17:00
+            </ion-text>
+          </ion-col>
+          <ion-col>
+            <ion-text color="light">
+              20:00-04:00
+            </ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <hr style="border-top: 1px dotted gold">
+    </ion-card-content>
+  </ion-card>
+   
+  <ion-card style="background: #505050">
+    <ion-card-header>
+      <ion-card-title color="gold">
+        Sobre o programador
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <hr style="border-top: 1px dotted gold">
+      <ion-text color="light">
+        <br>
+        Paulo Gil
+        <br>
+        paulogil93@gmail.com
+        <br>
+      </ion-text>
+      <br>
+      <hr style="border-top: 1px dotted gold">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-chip style="background: #FFFFFF" color="primary" (click)=openGithub()>
+              <ion-icon name="logo-github"></ion-icon>
+              <ion-label>GitHub</ion-label>
+            </ion-chip>
+          </ion-col>
+          <ion-col>
+            <ion-chip style="background: #FFFFFF" color="primary" (click)=openLinkedin()>
+              <ion-icon name="logo-linkedin"></ion-icon>
+              <ion-label>LinkedIn</ion-label>
+            </ion-chip>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>

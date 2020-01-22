@@ -1,0 +1,28 @@
+ion-grid{
+    ion-col{
+        ion-card{
+            background-color: #505050 !important;
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+            margin-bottom: 0px !important;
+            margin-top: 0px !important;
+            ion-card-content{
+                padding: 0 !important; 
+            }
+        }
+    }
+}
+
+.swiper-slide {
+    display: block;
+}
+
+/*
+ion-slide > h3 {
+    margin-top: 2.8rem;
+}
+*/
+h3 {
+    color: gold;
+    margin-bottom: 1.5rem;
+}

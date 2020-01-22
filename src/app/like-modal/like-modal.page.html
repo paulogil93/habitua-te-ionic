@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="gold">Gostos</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        <ion-icon color="light" slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let res of results" detail (click)=presentModal(res?.id)>
+      <ion-avatar slot="start">
+        <ion-img src="{{ res?.profile_pic }}"></ion-img>
+      </ion-avatar>
+      <ion-label color="light">{{ res?.name }}</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

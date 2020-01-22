@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title color="gold">{{ output?.name }}</ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="dismiss()">
+          <ion-icon color="light" slot="icon-only" name="close"></ion-icon>
+        </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card style="background-color: #505050">
+    <ion-img src="{{ output?.picture }}"></ion-img>
+
+    <ion-card-header>
+      <ion-card-title color="light">Descrição</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content color="gold">
+      <div class="ion-text-justify">
+        <ion-text color="light" >
+          {{ output?.description }}
+        </ion-text>
+      </div>
+      <br>
+      <ion-grid>
+        <hr style="border-top: 1px dotted gold">
+        <ion-row>
+          <ion-col>
+            <ion-text style="font-weight: bold" color="gold">
+              País de origem:
+            </ion-text>
+          </ion-col>
+          <ion-col text-right>
+            <ion-text style="font-weight: bold" color="gold">
+              {{ output?.country }}
+            </ion-text>
+          </ion-col>
+        </ion-row>
+        <ng-template [ngIf]="output.proof != 0">
+          <hr style="border-top: 1px dotted gold">
+          <ion-row>
+            <ion-col>
+              <ion-text style="font-weight: bold" color="gold">
+                Álcool:
+              </ion-text>
+            </ion-col>
+            <ion-col text-right>
+              <ion-text style="font-weight: bold" color="gold">
+                {{ output?.proof }} %
+              </ion-text>
+            </ion-col>
+          </ion-row>
+        </ng-template>
+        <hr style="border-top: 1px dotted gold">
+        <ion-row>
+          <ion-col>
+            <ion-text style="font-weight: bold" color="gold">
+              Preço:
+            </ion-text>
+          </ion-col>
+          <ion-col text-right>
+            <ion-text style="font-weight: bold" color="gold">
+              {{ output?.price }} €
+            </ion-text>
+          </ion-col>
+        </ion-row>
+        <hr style="border-top: 1px dotted gold">
+        <ion-row>
+          <ion-col>
+            <ion-text style="font-weight: bold" color="gold">
+              Disponível:
+            </ion-text>
+          </ion-col>
+          <ion-col text-right>
+            <div *ngIf="available; else notAvailable">
+              <ion-text style="font-weight: bold" color="gold">
+                Sim
+              </ion-text>
+            </div>
+            <ng-template #notAvailable>
+              <ion-text style="font-weight: bold" color="gold">
+                Não
+              </ion-text>
+            </ng-template>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

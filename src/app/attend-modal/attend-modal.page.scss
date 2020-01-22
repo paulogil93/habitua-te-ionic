@@ -1,0 +1,11 @@
+ion-segment-button{
+    font-size: 16px;
+    color: var(--ion-color-light) !important;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.segment-button-checked{
+    color: var(--ion-color-secondary) !important;
+    //border-bottom: 3px solid var(--ion-color-secondary) !important;
+}

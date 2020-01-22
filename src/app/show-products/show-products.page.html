@@ -1,0 +1,194 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="presentSearch()">
+        <ion-icon color="light" slot="icon-only" name="md-search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title color="gold">
+      Produtos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+  
+<ion-content>
+  <ion-card style="background-color: #505050">
+    <ion-card-header>
+      <ion-card-title color="gold">Favoritos</ion-card-title>
+    </ion-card-header>
+    <hr style="border-top: 1px dotted gold">
+    <br>
+    <ion-slides pager [options]="slideOptsOne">
+      <ion-slide *ngFor="let favourite of favourites">
+        <img src="{{ favourite?.picture }}"/> 
+        <h3>{{ favourite?.name }}</h3>
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card *ngIf="items[0]" text-center class="ion-activatable" style="background-color: #505050" (click)="openCategory(items[0].id, items[0].name)">
+          <ion-ripple-effect></ion-ripple-effect>
+          <ion-img  src="{{ items[0].url }}"></ion-img>
+          <ion-card-header>
+            <ion-card-title color="gold">{{ items[0].name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card *ngIf="items[1]" text-center class="ion-activatable" style="background-color: #303030" (click)="openCategory(items[1].id, items[1].name)">
+          <ion-ripple-effect></ion-ripple-effect>
+          <ion-img src="{{ items[1].url }}"></ion-img>
+          <ion-card-header>
+            <ion-card-title color="gold">{{ items[1].name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card *ngIf="items[2]" text-center class="ion-activatable" style="background-color: #303030" (click)="openCategory(items[2].id, items[2].name)">
+          <ion-ripple-effect></ion-ripple-effect>
+          <ion-img  src="{{ items[2].url }}"></ion-img>
+          <ion-card-header>
+            <ion-card-title color="gold">{{ items[2].name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card *ngIf="items[3]" text-center class="ion-activatable" style="background-color: #303030" (click)="openCategory(items[3].id, items[3].name)">
+          <ion-ripple-effect></ion-ripple-effect>
+          <ion-img src="{{ items[3].url }}"></ion-img>
+          <ion-card-header>
+            <ion-card-title color="gold">{{ items[3].name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card *ngIf="items[4]" text-center class="ion-activatable" style="background-color: #303030" (click)="openCategory(items[4].id, items[4].name)">
+          <ion-ripple-effect></ion-ripple-effect>
+          <ion-img  src="{{ items[4].url }}"></ion-img>
+          <ion-card-header>
+            <ion-card-title color="gold">{{ items[4].name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card *ngIf="items[5]" text-center class="ion-activatable" style="background-color: #303030" (click)="openCategory(items[5].id, items[5].name)">
+          <ion-ripple-effect></ion-ripple-effect>
+          <ion-img src="{{ items[5].url }}"></ion-img>
+          <ion-card-header>
+            <ion-card-title color="gold">{{ items[5].name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card *ngIf="items[6]" text-center class="ion-activatable" style="background-color: #303030" (click)="openCategory(items[6].id, items[6].name)">
+          <ion-ripple-effect></ion-ripple-effect>
+          <ion-img  src="{{ items[6].url }}"></ion-img>
+          <ion-card-header>
+            <ion-card-title color="gold">{{ items[6].name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card *ngIf="items[7]" text-center class="ion-activatable" style="background-color: #303030" (click)="openCategory(items[7].id, items[7].name)">
+          <ion-ripple-effect></ion-ripple-effect>
+          <ion-img src="{{ items[7].url }}"></ion-img>
+          <ion-card-header>
+            <ion-card-title color="gold">{{ items[7].name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card *ngIf="items[8]" text-center class="ion-activatable" style="background-color: #303030" (click)="openCategory(items[8].id, items[8].name)">
+          <ion-ripple-effect></ion-ripple-effect>
+          <ion-img  src="{{ items[8].url }}"></ion-img>
+          <ion-card-header>
+            <ion-card-title color="gold">{{ items[8].name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card *ngIf="items[9]" text-center class="ion-activatable" style="background-color: #303030" (click)="openCategory(items[9].id, items[9].name)">
+          <ion-ripple-effect></ion-ripple-effect>
+          <ion-img src="{{ items[9].url }}"></ion-img>
+          <ion-card-header>
+            <ion-card-title color="gold">{{ items[9].name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card *ngIf="items[10]" text-center class="ion-activatable" style="background-color: #303030" (click)="openCategory(items[10].id, items[10].name)">
+          <ion-ripple-effect></ion-ripple-effect>
+          <ion-img  src="{{ items[10].url }}"></ion-img>
+          <ion-card-header>
+            <ion-card-title color="gold">{{ items[10].name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card *ngIf="items[11]" text-center class="ion-activatable" style="background-color: #303030" (click)="openCategory(items[11].id, items[11].name)">
+          <ion-ripple-effect></ion-ripple-effect>
+          <ion-img src="{{ items[11].url }}"></ion-img>
+          <ion-card-header>
+            <ion-card-title color="gold">{{ items[11].name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card *ngIf="items[12]" text-center class="ion-activatable" style="background-color: #303030" (click)="openCategory(items[12].id, items[12].name)">
+          <ion-ripple-effect></ion-ripple-effect>
+          <ion-img  src="{{ items[12].url }}"></ion-img>
+          <ion-card-header>
+            <ion-card-title color="gold">{{ items[12].name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card *ngIf="items[13]" text-center class="ion-activatable" style="background-color: #303030" (click)="openCategory(items[13].id, items[13].name)">
+          <ion-ripple-effect></ion-ripple-effect>
+          <ion-img src="{{ items[13].url }}"></ion-img>
+          <ion-card-header>
+            <ion-card-title color="gold">{{ items[13].name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card *ngIf="items[14]" text-center class="ion-activatable" style="background-color: #303030" (click)="openCategory(items[14].id, items[14].name)">
+          <ion-ripple-effect></ion-ripple-effect>
+          <ion-img  src="{{ items[14].url }}"></ion-img>
+          <ion-card-header>
+            <ion-card-title color="gold">{{ items[14].name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card *ngIf="items[15]" text-center class="ion-activatable" style="background-color: #303030" (click)="openCategory(items[15].id, items[15].name)">
+          <ion-ripple-effect></ion-ripple-effect>
+          <ion-img src="{{ items[15].url }}"></ion-img>
+          <ion-card-header>
+            <ion-card-title color="gold">{{ items[15].name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

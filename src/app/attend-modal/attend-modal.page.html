@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="gold">Ver quem vai</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        <ion-icon color="light" slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment (ionChange)="segmentChanged($event)" color="secondary" value="go">
+    <ion-segment-button value="go"> 
+      <ion-label>Vão</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="maybe">
+      <ion-label>Talvez</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="dont">
+      <ion-label>Não vão</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-list>
+    <ion-item *ngFor="let item of items" detail (click)=presentModal(item?.user_id)>
+      <ion-avatar slot="start">
+        <ion-img src="{{ item?.profile_pic }}"></ion-img>
+      </ion-avatar>
+      <ion-label color="light">{{ item?.name }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

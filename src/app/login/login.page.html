@@ -1,0 +1,56 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title color="gold">
+        Login
+      </ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="presentModal()">
+          <ion-icon color="light" slot="icon-only" name="help-circle-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <br>
+  <br>
+  <br>
+  <ion-card style="background-color: #505050">
+    <br>
+    <br>
+    <br>
+    <ion-grid>
+      <ion-row>
+        <ion-col align-items-center>
+          <ion-avatar class="avatar">
+            <img src="https://i.imgur.com/ECsE8ph.png">
+          </ion-avatar>
+          <br>
+          <br>
+          <br>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col text-center>
+          <ion-text class="text" color="light">
+            Para poderes começar a saber mais informações sobre o teu bar e sobre tudo aquilo que se passa, precisas de iniciar sessão com o Facebook.
+          </ion-text>
+          <br>
+          <br>
+          <br>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col text-center>
+          <ion-button style="height: 50px;" size="default" (click)=Login()>
+            Continuar com o Facebook
+            <ion-icon slot="end" name="logo-facebook"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <br>
+    <br>
+    <br>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="gold">Procurar</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        <ion-icon color="light" slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar (ionInput)="getItems($event)" color="dark" animated></ion-searchbar>
+  <ion-list>
+    <ion-item style="background-color: #505050; color: #FFFFFF" *ngFor="let item of items" detail (click)="openDetails(item.id)">
+      <ion-label>
+        {{ item.name }}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

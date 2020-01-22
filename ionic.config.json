@@ -1,0 +1,7 @@
+{
+  "name": "Habitua-te",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

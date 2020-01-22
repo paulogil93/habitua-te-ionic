@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="light" defaultHref="/events"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="presentActionSheet()">
+        <ion-icon color="light" slot="icon-only" name="list"></ion-icon>
+      </ion-button>
+      <ion-button (click)="presentSearch()">
+          <ion-icon color="light" slot="icon-only" name="md-search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title color="gold">
+      {{ name }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let item of items" style="background-color: #505050" class="welcome-card">
+    <ion-img src="{{ item.picture }}"></ion-img>
+    <ion-card-header>
+      <ion-card-title color="light">{{ item.name }}</ion-card-title>
+    </ion-card-header>
+    
+    <ion-card-content color="gold">
+      <div class="ion-text-justify">
+        <ion-text color="light" >
+          {{ item.description }}
+        </ion-text>
+      </div>
+      <br>
+      <ion-grid>
+        <hr style="border-top: 1px dotted gold">
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <ion-button expand="full" shape="round" fill="outline" color="gold" (click)=presentModal(item.id)>Mais detalhes</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
