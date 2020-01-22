@@ -30,9 +30,24 @@ The main purpose of this module is to check if the user had already logged in in
 
 This module is exclusively used to make API calls and return data from the Database. It processes all requests from the app.
 
+## Preview
+
+
+|![img1](https://i.imgur.com/OLz0njk.jpg =300x500)
+|![img2](https://i.imgur.com/OLz0njk.jpg =300x500)
+|![img3](https://i.imgur.com/OLz0njk.jpg =300x500)
+|![img4](https://i.imgur.com/OLz0njk.jpg =300x500)|
+|:-------------------:|:-------------------:|:-------------------:|:-------------------:|
+|![img1](https://i.imgur.com/OLz0njk.jpg =300x500)|![img1](https://i.imgur.com/OLz0njk.jpg =300x500)|![img1](https://i.imgur.com/OLz0njk.jpg =300x500)|![img1](https://i.imgur.com/OLz0njk.jpg =300x500)|
+
+
 ## Get the App
 
 You can download and try the full project by following the link into Google Play Store.
 <br>
 <br>
-[<img src="https://lh3.googleusercontent.com/1hJj6Aw2k6cEyFu10xdj5riLo0wBGFKE5XnbGaymhgo1z8Tsr8EpfJr2jbQFRxDONvwk6lak-62F2Fx7-_jp-ykJKA=w1000" width=200 height=60>](https://play.google.com/store/apps/details?id=com.paulogil.habitua_te)
+<p align="center">
+	<a href="https://play.google.com/store/apps/details?id=com.paulogil.habitua_te">
+		<img src="https://lh3.googleusercontent.com/1hJj6Aw2k6cEyFu10xdj5riLo0wBGFKE5XnbGaymhgo1z8Tsr8EpfJr2jbQFRxDONvwk6lak-62F2Fx7-_jp-ykJKA=w1000" width=200 height=60>
+	</a>
+</p>
