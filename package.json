@@ -46,7 +46,7 @@
     "jssha": "^2.3.1",
     "onesignal-cordova-plugin": "2.5.2",
     "rxjs": "~6.5.1",
-    "serialize-javascript": "^2.1.2",
+    "serialize-javascript": "^3.1.0",
     "tslib": "^1.9.0",
     "uk.co.workingedge.phonegap.plugin.launchnavigator": "5.0.4",
     "zone.js": "~0.8.29"
